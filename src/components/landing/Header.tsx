@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
-import { SariraLogo } from '@/components/icons/SariraLogo';
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -58,10 +57,7 @@ export function Header() {
         'md:hidden fixed top-0 left-0 w-full h-full bg-background/95 backdrop-blur-lg z-50 transition-transform duration-300 ease-in-out',
         isOpen ? 'translate-x-0' : '-translate-x-full'
       )}>
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-            <Link href="/" onClick={closeMenu} className="text-2xl font-bold font-headline text-primary">
-              <SariraLogo className="h-14 w-auto"/>
-            </Link>
+        <div className="container mx-auto px-4 py-4 flex justify-end items-center">
             <Button onClick={closeMenu} variant="ghost" size="icon">
               <X className="h-6 w-6 text-primary" />
             </Button>
