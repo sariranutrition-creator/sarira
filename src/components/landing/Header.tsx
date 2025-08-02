@@ -36,9 +36,7 @@ export function Header() {
       isScrolled ? 'bg-background/95 backdrop-blur-sm shadow-md' : 'bg-transparent',
     )}>
       <div className="container mx-auto px-4 flex justify-between items-center py-2">
-        <Link href="/" className="text-2xl font-bold font-headline text-primary">
-          <SariraLogo className="h-14 w-auto" />
-        </Link>
+        <div></div>
         <nav className="hidden md:flex space-x-6 items-center">
           {navLinks.map(link => (
             <Link key={link.href} href={link.href} className="text-primary hover:text-accent transition-colors duration-300 font-medium">
